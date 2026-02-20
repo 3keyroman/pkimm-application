@@ -1,0 +1,65 @@
+name: PKI-MM Application User Story
+description: Create a structured PKI-MM application user story
+title: "[US-XXX] "
+labels: ["type:user-story"]
+
+body:
+  - type: input
+    id: story_id
+    attributes:
+      label: Story ID
+      placeholder: US-A1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: epic
+    attributes:
+      label: Epic
+      options:
+        - Epic A — Onboarding & Workspace
+        - Epic B — PKI Use Case Management
+        - Epic C — Full Assessment Lifecycle
+        - Epic D — Evidence & References
+        - Epic E — Collaboration & Governance
+        - Epic F — Scoring & Improvement
+        - Epic G — Reporting & Progress
+        - Epic H — Security & Deployment
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: As a ... I want ... So that ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+
+  - type: textarea
+    id: architecture_notes
+    attributes:
+      label: Architecture Impact Notes
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: [P0, P1, P2, P3]
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Primary Persona
+      options:
+        - Organization Admin
+        - Assessment Lead
+        - Assessor
+        - Contributor
+        - Reviewer
+        - Auditor
